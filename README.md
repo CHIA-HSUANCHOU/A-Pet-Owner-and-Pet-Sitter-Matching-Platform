@@ -29,11 +29,20 @@ Date: 2024-06-10
 | 李亞駿 | Department of Advertising | Backend: Order history, Frontend HTML structure |
 | 陳姿妤 | Department of Accounting  | Overall website design |
 
+In more detailed of my job：
 
+Role Selection: Allows users to choose between being a pet sitter or an owner seeking pet sitting services.
 
+Pet Sitter and Owner Registration/Login: Enables users to register and log in username and password. Stores owner or pet sitter information securely in the database, utilizing hashing techniques for authentication security.
+
+Filter Sitters: Allows sitters to choose sitter based on service type, average sitter rating, accepted pet type, and veterinary experience using the SQLAlchemy package.
+
+Filter Results: Displays filtered search results of pet sitters, and allows owners to select their preferred sitter.
+
+Book Sitters: Enables owners to input reservation details for a sitter. Stores this information in the Reservation database.
 
 ## 4. ERD
-<img src="/Petservice/static/img/ERD.jpg" alt="ERD Image" style="width: 200%">
+<img src="/Petservice/static/img/ERD.jpg" alt="ERD Image" style="width: 100%">
 
 
 
