@@ -33,7 +33,7 @@ Date: 2024-06-10
 
 
 ## 4. ERD
-<img src="/Petservice/static/img/ERD.jpg" alt="ERD Image" style="width: 100%">
+<img src="/Petservice/static/img/ERD.jpg" alt="ERD Image" style="width: 200%">
 
 
 
