@@ -1,10 +1,10 @@
 # Database-Management-System-project
 ---
-Title: "Funny Paw: A Pet Owner and Pet Sitter Matching Platform"
+Title: Funny Paw: A Pet Owner and Pet Sitter Matching Platform
 
-Author: "Group 2"
+Author: Group 2
 
-Date: "2024-06-10"
+Date: 2024-06-10
 
 ---
 
@@ -30,5 +30,5 @@ Date: "2024-06-10"
 
 
 ## 4. ERD
-![ERD Image](static/img/ERD.jpg)
+![ERD Image](/Petservice/static/img/ERD.jpg)
 
