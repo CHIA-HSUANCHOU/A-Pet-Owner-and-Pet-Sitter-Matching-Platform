@@ -98,14 +98,14 @@ class editForm_sitter(FlaskForm):
 class commentForm_owner(FlaskForm):
     sitterrating = IntegerField(label='Sitter Rating', validators=[DataRequired()])
     sittercomment = StringField(label='Sitter Comment', validators=[DataRequired()])
-    # 隐藏字段用于表示預約的 ID
+    # 隱藏預約的 ID
     reservationid=  HiddenField(validators=[DataRequired()])
     submit = SubmitField(label='Submit Review')
 
 class commentForm_sitter(FlaskForm):
     ownerrating = IntegerField(label='Owner Rating', validators=[DataRequired()])
     ownercomment = StringField(label='Owner Comment', validators=[DataRequired()])
-    # 隐藏字段用于表示預約的 ID
+    # 隱藏預約的 ID
     reservationid=  HiddenField(validators=[DataRequired()])
     submit = SubmitField(label='Submit Review')
 

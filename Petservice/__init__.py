@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = os.urandom(12)
 
 
 ##connect mySQL
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:++++++++++++@localhost/test2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/test2'
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
@@ -18,7 +18,7 @@ bcrypt = Bcrypt(app)
 #mydb = mysql.connector.connect(
 #    host = "localhost",
 #    user = "root",
-#    password = "++++"
+#    password = ""
 #)
 
 #my_cursor = mydb.cursor()

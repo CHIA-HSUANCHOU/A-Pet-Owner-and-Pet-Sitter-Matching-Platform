@@ -15,7 +15,7 @@ def home_page():
 
 #owner or petsitter
 @app.route('/login_mode', methods=['GET', 'POST'])
-def login_mode():      ###更改前端的網頁url即可
+def login_mode():     
     return render_template('login-mode.html')
     
 #owner/pet register
@@ -51,7 +51,7 @@ def owner_register_page():
 
         login_user(user_to_create2)
         session['type'] = 'Owner'
-        return redirect(url_for('owner_login_page')) ####註冊後到哪
+        return redirect(url_for('owner_login_page')) 
     
     return render_template('OwnerSignUp.html', form2=form2, form1 = form1)
 
@@ -82,7 +82,7 @@ def sitter_register_page():
         db.session.commit()
         login_user(user_to_create)
         session['type'] = 'Sitter'
-        #flash(f"Account created successfully! You are now logged in as {user_to_create.sitterusername}", category='success')
+        flash(f"Account created successfully! You are now logged in as {user_to_create.sitterusername}", category='success')
         return redirect(url_for('sitter_login_page')) ####
 
     return render_template('SitterSignUp.html', form=form)
@@ -100,12 +100,12 @@ def owner_login_page():
         ):  
             
             login_user(attempted_user)
-            #session.permanent = True
+
             session['type'] = 'Owner'
-            #flash(f'Success! You are logged in as: {attempted_user.ownerusername}', category='success')
-            return redirect(url_for('babyowner'))  ###登入成功連的網頁(之後要改)
-        #else:
-           #flash('Username and password are not match! Please try again', category='danger')
+            flash(f'Success! You are logged in as: {attempted_user.ownerusername}', category='success')
+            return redirect(url_for('babyowner'))  
+        else:
+           flash('Username and password are not match! Please try again', category='danger')
 
     return render_template('Login-Owner.html', form=form)
 
@@ -118,12 +118,12 @@ def sitter_login_page():
         if attempted_user and attempted_user.check_password_correction(attempted_sitterpassword=form.sitterpassword.data):
 
             login_user(attempted_user)
-            #session.permanent = True
+            session.permanent = True
             session['type'] = "Sitter"
-            #flash(f'Success! You are logged in as: {attempted_user.sitterusername}', category='success')
-            return redirect(url_for('babysitter')) ###登入成功連的網頁(之後要改)
-        #else:
-           #flash('Username and password are not match! Please try again', category='danger')
+            flash(f'Success! You are logged in as: {attempted_user.sitterusername}', category='success')
+            return redirect(url_for('babysitter')) 
+        else:
+           flash('Username and password are not match! Please try again', category='danger')
 
     return render_template('Login-sitter.html', form=form)
 
