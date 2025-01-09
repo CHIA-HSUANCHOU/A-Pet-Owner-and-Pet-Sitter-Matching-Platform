@@ -6,6 +6,8 @@ Author: Group 2
 
 Date: 2024-06-10
 
+Course: Database Management System
+
 ---
 
 ## 1. Code Structure
@@ -16,10 +18,14 @@ Date: 2024-06-10
 
 **Database**：MySQL
 
-## 2. Functions
+## 2. Goal 
+
+The goal of the Funny Paw platform is to provide a secure service that connects pet owners with trusted pet sitters, while also allowing pet sitters to find pets that match their services. By streamlining the registration, login, and booking processes, the platform enables pet owners to easily find and book sitters based on specific criteria. Additionally, the platform features a review system that allows both owners and sitters to share their comments, helping to maintain high service quality.
+
+## 3. Functions
 ![Function Image](/Petservice/static/img/functiondiagram.jpg)
 
-## 3. Contributors
+## 4. Contributors
 
 | Teammates | Department | Contribution |
 |-----------|------------|--------------|
@@ -29,7 +35,7 @@ Date: 2024-06-10
 | 李亞駿 | Department of Advertising | Backend: Order history, Frontend HTML structure |
 | 陳姿妤 | Department of Accounting  | Overall website design |
 
-## 4. Workflow and Detailed of My Jobs
+## 5. Workflow and Detailed of My Jobs
 
 My contributions are 1, 2, 3, 6, 7, 8
 
@@ -59,6 +65,6 @@ My contributions are 1, 2, 3, 6, 7, 8
 **11.Review Sitter**
  ![comment sitter Page](/Petservice/static/img/comment.png)
  
-## 4. ERD
+## 6. ERD
 <img src="/Petservice/static/img/ERD.jpg" alt="ERD Image" style="width: 100%">
 
